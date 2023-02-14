@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  web:
+    build:
+      dockerfile: Dockerfile.WEB
+    ports:
+      - "5000:80"
+    image: "bakery-web"
+environment:
+  API_URL: "https://api:80"
